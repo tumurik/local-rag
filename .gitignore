@@ -1,0 +1,45 @@
+
+# --- Secrets -------------------
+.env
+.env.*
+!.env.example
+
+# --- Vector store -------
+chroma_db/
+
+# --- Python virtual environment -----------------
+.venv/
+venv/
+env/
+
+# --- Python bytecode & build output ------
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info/
+
+# --- Tool caches ---------------------------------------------
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# --- Logs & scratch output -----------------------------------
+*.log
+*.tmp
+*.bak
+
+# --- Editors / IDEs ------------------------------------------
+.vscode/
+.idea/
+*.swp
+*~
+
+# --- OS clutter (Windows + macOS) ----------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
