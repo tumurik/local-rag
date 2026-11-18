@@ -1,0 +1,32 @@
+4. Miscellaneous Updates
+Lisbon office update (Elena): Buildout is on track. Furniture ordered, IT
+infrastructure being installed week of March 10. First employees expected to
+start on-site April 14 (two weeks behind original April 1 target due to permit
+delays). Elena has been interviewing locally and has 3 offers out for senior
+backend roles.
+HubSpot migration (James): Implementation started on schedule. Data
+migration from Pipedrive is 60% complete. On track for April 15 go-live. One
+issue: historical pipeline data from before 2024 may not migrate cleanly. James
+decided to archive pre-2024 data separately rather than delay the migration.
+Q1 revenue tracking (James): Tracking at 94% of plan as of March 1. Two large
+enterprise deals expected to close this month which would put us at 103% of Q1
+target. The v3.2 launch has definitely helped.
+Headcount update (Aisha): 19 of 28 Q1 hires completed. 6 more in offer
+stage. 3 roles still in active sourcing (the 2 AI/ML specialists and 1 Lisbon office
+manager). The AI roles have been challenging -- strong candidates are getting
+3-4 competing offers. Aisha suggested increasing the compensation band for
+these roles by 10-15%. Sarah approved on the spot.
+Action Items: | # | Action | Owner | Deadline |
+|---|--------|-------|----------|
+| 3.1 | Update employee handbook with new remote work policy | Aisha | Mar 20 |
+| 3.2 | Company-wide communication on remote policy change | Aisha + Sarah | Mar 20 |
+| 3.3 | Update IT security policy (password rotation) | Marcus | Mar 12 |
+| 3.4 | Company-wide communication on password policy change | Marcus | Mar 12 |
+| 3.5 | NovaTech Copilot project plan and staffing timeline | Marcus | Mar 19 |
+| 3.6 | Post AI/ML specialist roles with updated comp bands | Aisha | Mar 7 |
+| 3.7 | Lisbon office readiness report | Elena | Mar 28 |
+| 3.8 | Monthly Copilot progress report (first) | Marcus | Apr 10 |
+| 3.9 | Pricing scenario analysis presentation to leadership | James | Mar 15 |
+Next leadership team meeting scheduled for April 2, 2026.
+These notes were reviewed and approved by Sarah Chen on the respective
+dates.
