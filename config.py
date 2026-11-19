@@ -87,3 +87,21 @@ def collection_name() -> str:
     """
     slug = re.sub(r"[^a-zA-Z0-9]+", "-", EMBED_MODEL).strip("-")
     return f"{COLLECTION_BASE}__{slug}__{CHUNK_STRATEGY}"
+
+
+# ---------------------------------------------------------------------------
+# Retrieval & generation
+# ---------------------------------------------------------------------------
+
+TOP_K = int(os.getenv("TOP_K", "5"))
+TEMPERATURE = float(os.getenv("TEMPERATURE", "0.3"))
+# WHY: Qwen3.5 thinks by default and thinking shares the token cap -> empty answers.
+REASONING_EFFORT = os.getenv("REASONING_EFFORT", "none")
+MAX_TOKENS = int(os.getenv("MAX_TOKENS", "1024"))
+
+SYSTEM_PROMPT = """You are a helpful assistant answering questions based on provided context.
+Use ONLY the context below to answer. If the answer is not in the context, say "I cannot find this information in the provided documents."
+
+Context:
+{context}
+"""
