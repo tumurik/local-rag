@@ -1,0 +1,22 @@
+id    labelled source(s)                               rank
+q01   company_handbook.pdf                             1
+q02   company_handbook.pdf                             1
+q03   product_guide.pdf                                1
+q04   security_policy.pdf                              1
+q05   quarterly_report_q1_2026.pdf                     1
+q06   product_guide.pdf                                1
+q07   company_handbook.pdf                             1
+q08   security_policy.pdf                              1
+q09   quarterly_report_q1_2026.pdf                     1
+q10   meeting_notes.pdf, quarterly_report_q1_2026.pdf  3
+q11   company_handbook.pdf, meeting_notes.pdf          3
+q12   company_handbook.pdf, meeting_notes.pdf          3
+q13   meeting_notes.pdf, quarterly_report_q1_2026.pdf  2
+q14   product_guide.pdf, meeting_notes.pdf             3
+q15   meeting_notes.pdf                                1
+q16   meeting_notes.pdf                                1
+q17   product_guide.pdf                                2
+q18   quarterly_report_q1_2026.pdf, meeting_notes.pdf  2
+
+Questions scored: 18   Hit@5: 1.00   Hit@10: 1.00   MRR: 0.77
+Hit@K: all labelled documents are in the top K. MRR: average of 1/rank (1.0 = always first).

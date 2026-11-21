@@ -6,6 +6,8 @@ import os
 import re
 from pathlib import Path
 from openai import OpenAI
+from dotenv import load_dotenv
+load_dotenv() 
 
 BENCHMARK_MODELS = ["qwen3.5:4b-q4_K_M", "qwen3.5:2b-q4_K_M", "gemma4:e4b"]
 
@@ -104,3 +106,9 @@ Use ONLY the context below to answer. If the answer is not in the context, say "
 Context:
 {context}
 """
+
+if os.getenv("PROVIDER", "local") == "cloud":
+    LLM_BASE_URL = os.environ["JUDGE_BASE_URL"]          # must end in /openai/v1/
+    LLM_API_KEY = os.environ["AZURE_OPENAI_API_KEY"]
+    LLM_MODEL = os.getenv("CLOUD_MODEL", "gpt-5.6-luna")
+    TOKEN_LIMIT_PARAM = "max_completion_tokens" 
