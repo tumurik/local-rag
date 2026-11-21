@@ -22,8 +22,8 @@ def generate_answer(query, chunks):
         model=config.LLM_MODEL,
         messages=messages,
         temperature=config.TEMPERATURE,
-        reasoning_effort=config.REASONING_EFFORT,           # WHY: "none" = no hidden thinking eating the cap
-        **{config.TOKEN_LIMIT_PARAM: config.MAX_TOKENS},    # WHY: parameter NAME comes from config (local vs cloud)
+        reasoning_effort=config.REASONING_EFFORT,
+        **{config.TOKEN_LIMIT_PARAM: config.MAX_TOKENS},
     )
     choice = response.choices[0]
     answer = (choice.message.content or "").strip()

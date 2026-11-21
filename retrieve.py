@@ -11,7 +11,6 @@ import config
 
 def embed_query(query):
     """Embed one question with config.EMBED_MODEL. Returns [vector] (Chroma wants a list)."""
-    # WHY: query prefix here, doc prefix in ingest - nomic-embed-text expects both, or neither.
     response = config.get_embed_client().embeddings.create(
         model=config.EMBED_MODEL, input=[config.EMBED_QUERY_PREFIX + query]
     )
@@ -22,7 +21,7 @@ def retrieve_chunks(query, top_k=config.TOP_K):
     collection = chromadb.PersistentClient(path=config.CHROMA_PATH).get_collection(config.collection_name())
     start = time.time()
     result = collection.query(
-        query_embeddings=embed_query(query),  # WHY: same embedding model as ingest
+        query_embeddings=embed_query(query),
         n_results=top_k,
     )
     chunks = [
@@ -34,7 +33,7 @@ def retrieve_chunks(query, top_k=config.TOP_K):
         "retrieved_chunks": chunks,
         "retrieval_time_ms": round((time.time() - start) * 1000),
         "embedding_model": config.EMBED_MODEL,
-        "collection": config.collection_name(),  # WHY: says which chunking build was searched
+        "collection": config.collection_name(),
         "top_k": top_k,
     }
 

@@ -1,7 +1,7 @@
 [
   {
     "id": "q01",
-    "question": "How many days of paid time off full-time employees receive each year?",
+    "question": "I'm full-time. How many vacation days do I get per year, not counting public holidays?",
     "expected_answer": "Full-time employees receive twenty-five (25) days of paid time off per calendar year, in addition to public holidays observed at their office location. Part-time employees receive PTO on a pro-rata basis.",
     "source_document": "company_handbook.pdf",
     "difficulty": "easy",
@@ -9,30 +9,22 @@
   },
   {
     "id": "q02",
-    "question": "How many free counseling sessions per year are available through the Employee Assistance Program (EAP)?",
-    "expected_answer": "Employees and their immediate family members may access up to eight (8) free counseling sessions per year through the EAP, provided by Workplace Options.",
-    "source_document": "company_handbook.pdf",
-    "difficulty": "easy",
-    "type": "factual"
-  },
-  {
-    "id": "q03",
-    "question": "How long does the onboarding program run for new employees?",
+    "question": "when does onboarding actually end for a new hire?",
     "expected_answer": "The onboarding program runs for the first ninety (90) calendar days of employment and consists of three phases: Pre-Boarding (before Day 1), First Two Weeks, and Months 1-3.",
     "source_document": "company_handbook.pdf",
     "difficulty": "easy",
     "type": "factual"
   },
   {
-    "id": "q04",
-    "question": "How long is the free trial, and is a credit card required to start a trial?",
+    "id": "q03",
+    "question": "Can we try the product before paying? For how long, and do we have to enter card details?",
     "expected_answer": "All tiers include a 14-day free trial with full Professional-tier features. No credit card is required. Trial workspaces are limited to 10 users and 5 GB of storage.",
     "source_document": "product_guide.pdf",
     "difficulty": "easy",
     "type": "factual"
   },
   {
-    "id": "q05",
+    "id": "q04",
     "question": "Within what time must P1 (Critical) security incidents be acknowledged?",
     "expected_answer": "P1 incidents require acknowledgment within 15 minutes of detection. The full Incident Response Team must be assembled within 30 minutes, and the CEO, General Counsel and Board Security Committee must be notified within 1 hour.",
     "source_document": "security_policy.pdf",
@@ -40,15 +32,15 @@
     "type": "factual"
   },
   {
-    "id": "q06",
-    "question": "What was the Net Revenue Retention (NRR) in Q1 2026?",
+    "id": "q05",
+    "question": "Did our existing customers end up paying us more in Q1 2026 than a year earlier? What's the net retention figure?",
     "expected_answer": "Net Revenue Retention was 112% in Q1 2026, up from 108% in Q4 2025 (and 105% in Q1 2025). The target was 110%.",
     "source_document": "quarterly_report_q1_2026.pdf",
     "difficulty": "easy",
     "type": "factual"
   },
   {
-    "id": "q07",
+    "id": "q06",
     "question": "Compare the uptime SLA and the support response time for Critical (service down) issues across the Starter, Professional and Enterprise tiers.",
     "expected_answer": "Starter: 99.5% uptime (about 3 hours 39 minutes maximum monthly downtime), 4 hours response for Critical issues. Professional: 99.9% (about 43 minutes), 1 hour. Enterprise: 99.95% (about 21 minutes), 15 minutes.",
     "source_document": "product_guide.pdf",
@@ -56,7 +48,7 @@
     "type": "comparison"
   },
   {
-    "id": "q08",
+    "id": "q07",
     "question": "What are the rules for flight class and pre-approval when booking business travel?",
     "expected_answer": "Flights must be booked through TravelPerk. Economy class is standard for flights under six hours; premium economy may be booked for flights over six hours; business class requires VP-level pre-approval and is generally reserved for C-level executives and client-facing travel where the flight exceeds eight hours. Any single flight over €500 needs manager pre-approval via NovaExpense, and flights over €2,000 also need Finance department approval.",
     "source_document": "company_handbook.pdf",
@@ -64,7 +56,7 @@
     "type": "synthesis"
   },
   {
-    "id": "q09",
+    "id": "q08",
     "question": "What are the six phases of the incident response lifecycle?",
     "expected_answer": "1) Detection and Reporting, 2) Triage and Classification, 3) Containment, 4) Eradication, 5) Recovery, 6) Post-Incident Review. All incidents follow these phases regardless of severity.",
     "source_document": "security_policy.pdf",
@@ -72,23 +64,7 @@
     "type": "procedural"
   },
   {
-    "id": "q10",
-    "question": "What security assessment must a vendor complete, depending on the classification of data it will handle?",
-    "expected_answer": "Public or Internal data: the VSQ-Lite questionnaire (30 questions). Confidential data: the full VSQ-Full questionnaire (120 questions) plus evidence of a SOC 2 Type II audit completed within the past 12 months. Restricted data: all Confidential-tier requirements plus an on-site (or virtual) security audit by the NovaTech Security Team. Assessments are done before engagement and annually thereafter.",
-    "source_document": "security_policy.pdf",
-    "difficulty": "medium",
-    "type": "synthesis"
-  },
-  {
-    "id": "q11",
-    "question": "How did new Annual Contract Value (ACV) closed in Q1 2026 compare to target in each segment?",
-    "expected_answer": "Enterprise: EUR 1.04M vs EUR 0.90M target (116%). Professional: EUR 0.62M vs EUR 0.58M (107%). Starter: EUR 0.24M vs EUR 0.22M (109%). Total: EUR 1.90M vs EUR 1.70M (112% attainment).",
-    "source_document": "quarterly_report_q1_2026.pdf",
-    "difficulty": "medium",
-    "type": "comparison"
-  },
-  {
-    "id": "q12",
+    "id": "q09",
     "question": "Which Enterprise accounts were flagged as at-risk for renewal, and what is the total at-risk ARR?",
     "expected_answer": "Gruber Manufacturing (EUR 178K, June 2026, sponsor departure and new CTO evaluating alternatives), Rheinland Utilities AG (EUR 148K, July 2026, budget pressure and possible downgrade to Professional), and Alpen Logistics (EUR 94K, May 2026, low adoption at 32% seat utilization). Total at-risk ARR is EUR 420K, or 2.3% of total ARR.",
     "source_document": "quarterly_report_q1_2026.pdf",
@@ -96,7 +72,7 @@
     "type": "synthesis"
   },
   {
-    "id": "q13",
+    "id": "q10",
     "question": "What is NovaTech Copilot and what budget was approved for it?",
     "expected_answer": "NovaTech Copilot is an AI-powered assistant for ProjectHub (the quarterly report describes it as working across both ProjectHub and Insight), built on locally hosted open-source LLMs and fine-tuned models so it can run on-premises or in the customer VPC. A total budget of EUR 1.2M was approved on March 5, 2026: personnel EUR 780K, infrastructure (GPU compute) EUR 280K, external consulting and dataset licensing EUR 90K, contingency EUR 50K. Staffing starts with 2 ML engineers in April, ramping to 4 by July.",
     "source_document": "meeting_notes.pdf, quarterly_report_q1_2026.pdf",
@@ -104,7 +80,7 @@
     "type": "synthesis"
   },
   {
-    "id": "q14",
+    "id": "q11",
     "question": "How many days per week can employees work remotely?",
     "expected_answer": "The handbook (v4.2, effective January 1, 2026) allows up to three days per week with manager approval, with at least one mandatory in-office team day per week (one day per week during probation). At the March 5, 2026 leadership meeting this was changed to up to 4 days remote per week, effective Q3 2026, with Tuesday as the mandatory in-office day company-wide; department heads may require up to 2 in-office days (Sales keeps Tuesday and Thursday). A good answer should mention both and that the change takes effect in Q3 2026.",
     "source_document": "company_handbook.pdf, meeting_notes.pdf",
@@ -112,7 +88,7 @@
     "type": "conflicting_sources"
   },
   {
-    "id": "q15",
+    "id": "q12",
     "question": "How often must employees change their passwords?",
     "expected_answer": "The handbook requires password rotation every ninety (90) days. However, on March 5, 2026 the leadership team extended rotation to 180 days for employee user accounts, effective immediately; infrastructure credentials (SSH keys, service accounts) stay on 90-day rotation. A good answer notes the newer decision overrides the handbook for employee accounts.",
     "source_document": "company_handbook.pdf, meeting_notes.pdf",
@@ -120,7 +96,7 @@
     "type": "conflicting_sources"
   },
   {
-    "id": "q16",
+    "id": "q13",
     "question": "When was ProjectHub v3.2 released?",
     "expected_answer": "The sources disagree. The February 12 leadership meeting notes say v3.2 shipped January 28, two weeks behind the original schedule. The Q1 2026 quarterly report says it was released on February 12, 2026. A good answer reports both dates and flags the conflict.",
     "source_document": "meeting_notes.pdf, quarterly_report_q1_2026.pdf",
@@ -128,7 +104,7 @@
     "type": "conflicting_sources"
   },
   {
-    "id": "q17",
+    "id": "q14",
     "question": "What is the monthly price per user for the Professional tier?",
     "expected_answer": "The product guide lists Professional at €79/user/month (€66/user/month billed annually, minimum 10 users). The February 12, 2026 meeting notes list 'current pricing' as EUR 59/user/month for Professional (and EUR 99 for Enterprise, which the product guide lists as custom pricing). A good answer gives the product guide price and flags the conflicting figure.",
     "source_document": "product_guide.pdf, meeting_notes.pdf",
@@ -136,7 +112,39 @@
     "type": "conflicting_sources"
   },
   {
+    "id": "q15",
+    "question": "Why did leadership turn down the proposal to raise the Starter tier price to EUR 39?",
+    "expected_answer": "The premise is wrong: the proposal was not turned down. At the February 12, 2026 leadership meeting the direction was approved in principle, but no final price was set. James (VP Sales) was asked to model three scenarios (EUR 35, EUR 37, EUR 39) with their impact on conversion and churn; Marcus had worried the 34% increase could hurt SMB conversion and suggested EUR 35. The target implementation date stays Q3 2026, for new customers only, with existing customers grandfathered for 12 months. A good answer corrects the premise instead of inventing a rejection reason.",
+    "source_document": "meeting_notes.pdf",
+    "difficulty": "hard",
+    "type": "false_premise"
+  },
+  {
+    "id": "q16",
+    "question": "Which CRM did the company end up choosing, and why wasn't the VP of Sales' recommendation picked?",
+    "expected_answer": "HubSpot Enterprise was selected at the February 12, 2026 meeting, with go-live targeted for April 15 (on track as of March 5; Pipedrive data 60% migrated, pre-2024 data archived separately). The VP of Sales, James Park, had recommended Salesforce in January (EUR 180K/year; better enterprise reporting and integrations). It was not chosen because Marcus (CTO) considered it over-engineered for the company's size and its 4-6 month implementation would disrupt Q2 selling, and the 3-year TCO was EUR 780K for Salesforce versus EUR 385K for HubSpot. Freshsales (EUR 240K) was ruled out for lacking enterprise capabilities.",
+    "source_document": "meeting_notes.pdf",
+    "difficulty": "hard",
+    "type": "multi_hop"
+  },
+  {
+    "id": "q17",
+    "question": "We're a team of 25 and want both ProjectHub and Insight on the Professional plan. What would we pay per year with annual billing, and how much is that saving compared with paying monthly?",
+    "expected_answer": "With the bundle (15% discount), Professional costs EUR 112 per user per month billed annually, so 25 x 112 x 12 = EUR 33,600 per year. Monthly billing is EUR 134 per user per month, so 25 x 134 x 12 = EUR 40,200 per year. Annual billing saves EUR 6,600 per year. 25 users meets the Professional minimum of 10. (The February meeting notes list a different 'current' Professional price of EUR 59 for a single product; the product guide is the price list.)",
+    "source_document": "product_guide.pdf",
+    "difficulty": "hard",
+    "type": "numerical_reasoning"
+  },
+  {
     "id": "q18",
+    "question": "When did the Lisbon office open, and how many people can it hold?",
+    "expected_answer": "The sources disagree. The Q1 2026 quarterly report (dated April 14, 2026) says the Lisbon office opened on January 15, 2026, on schedule and under budget, with 22 staff at the end of Q1 and capacity for up to 40 employees. The leadership meeting notes say the lease starts April 1 with initial capacity for 45 people, expandable to 80 (January 15 meeting), and that the first employees were expected on-site on April 14, two weeks late because of permit delays (March 5 meeting). A good answer reports both versions and flags the conflict.",
+    "source_document": "quarterly_report_q1_2026.pdf, meeting_notes.pdf",
+    "difficulty": "hard",
+    "type": "conflicting_sources"
+  },
+  {
+    "id": "q19",
     "question": "What notice period must an employee give when resigning?",
     "expected_answer": "The documents do not contain information about a resignation notice period.",
     "source_document": null,
@@ -144,7 +152,7 @@
     "type": "unanswerable"
   },
   {
-    "id": "q19",
+    "id": "q20",
     "question": "What was NovaTech's quarterly revenue in Q2 2026?",
     "expected_answer": "The documents do not contain Q2 2026 results. The Q1 2026 report only gives Q2 projections and says the Q2 report is scheduled for publication on July 14, 2026.",
     "source_document": null,

@@ -1,0 +1,76 @@
+{
+  "timestamp_utc": "2026-11-19T07:23:42+00:00",
+  "llm_model": "gemma4:e4b",
+  "embed_model": "nomic-embed-text",
+  "collection": "bootcamp_docs__nomic-embed-text__recursive",
+  "chunk_strategy": "recursive",
+  "chunk_size_chars": 512,
+  "chunk_overlap_chars": 50,
+  "top_k": 5,
+  "temperature": 0.3,
+  "reasoning_effort": "none",
+  "max_tokens": 1024,
+  "context_length": 8192,
+  "output_file": "pipeline_outputs_gemma.json",
+  "questions": 19,
+  "empty_answers": [],
+  "finish_not_stop": [],
+  "expected_source_not_in_top_k": [],
+  "prompt_tokens": {
+    "min": 471,
+    "median": 645,
+    "max": 987
+  },
+  "retrieval_time_ms": {
+    "min": 2049,
+    "median": 2086,
+    "max": 3686
+  },
+  "generation_time_ms": {
+    "min": 2638,
+    "median": 3121,
+    "max": 23856
+  },
+  "ollama_ps": [
+    {
+      "name": "gemma4:e4b",
+      "model": "gemma4:e4b",
+      "size": 353653226,
+      "digest": "dc35e8d9c6061baa6f0fa870975ab6932e2542b579b13ea0f199fa4bb7300c9c",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "gemma4",
+        "families": [
+          "gemma4"
+        ],
+        "parameter_size": "7.5B",
+        "quantization_level": "Q4_K_M"
+      },
+      "expires_at": "2026-11-19T09:28:42.0823372+02:00",
+      "size_vram": 353653226,
+      "context_length": 8192,
+      "runner": "llamacpp"
+    },
+    {
+      "name": "nomic-embed-text:latest",
+      "model": "nomic-embed-text:latest",
+      "size": 335743549,
+      "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "nomic-bert",
+        "families": [
+          "nomic-bert"
+        ],
+        "parameter_size": "137M",
+        "quantization_level": "F16"
+      },
+      "expires_at": "2026-11-19T09:28:39.1736316+02:00",
+      "size_vram": 335743549,
+      "context_length": 2048,
+      "runner": "llamacpp"
+    }
+  ]
+}

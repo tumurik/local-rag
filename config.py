@@ -11,7 +11,7 @@ BENCHMARK_MODELS = ["qwen3.5:4b-q4_K_M", "qwen3.5:2b-q4_K_M", "gemma4:e4b"]
 
 LLM_BASE_URL = os.getenv("LLM_BASE_URL", "http://localhost:11434/v1")
 LLM_API_KEY = os.getenv("LLM_API_KEY", "ollama")
-LLM_MODEL = os.getenv("LLM_MODEL", "qwen3.5:4b-q4_K_M")
+LLM_MODEL = os.getenv("LLM_MODEL", "gemma4:e4b")
 
 TOKEN_LIMIT_PARAM = os.getenv("TOKEN_LIMIT_PARAM", "max_tokens")
 
@@ -53,7 +53,7 @@ COLLECTION_BASE = os.getenv("COLLECTION_BASE", "bootcamp_docs")
 # "recursive": baseline, RecursiveCharacterTextSplitter per page.
 # "sections":  one chunk per heading section (heading + paragraphs + lists + tables),
 #              long sections split, short siblings merged.
-CHUNK_STRATEGY = os.getenv("CHUNK_STRATEGY", "recursive")
+CHUNK_STRATEGY = os.getenv("CHUNK_STRATEGY", "sections")
 
 CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", "512"))            # recursive: max chunk length
 CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", "50"))       # both: overlap when a split is needed
@@ -93,10 +93,9 @@ def collection_name() -> str:
 # Retrieval & generation
 # ---------------------------------------------------------------------------
 
-TOP_K = int(os.getenv("TOP_K", "5"))
+TOP_K = int(os.getenv("TOP_K", "10"))
 TEMPERATURE = float(os.getenv("TEMPERATURE", "0.3"))
-# WHY: Qwen3.5 thinks by default and thinking shares the token cap -> empty answers.
-REASONING_EFFORT = os.getenv("REASONING_EFFORT", "none")
+REASONING_EFFORT = os.getenv("REASONING_EFFORT", "low")
 MAX_TOKENS = int(os.getenv("MAX_TOKENS", "1024"))
 
 SYSTEM_PROMPT = """You are a helpful assistant answering questions based on provided context.
